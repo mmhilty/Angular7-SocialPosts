@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+.containerClass{
+    max-width: 700px;
+}
+
+//blog title
+.headerDiv{
+    display: float;
+    text-align: right;
+    padding: 25px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-variant: small-caps;
+    
+}
+
+.newPostFormClass{
+    
+    text-align: left;
+    max-width: 700px;
+    margin: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.newPostTitleBoxClass{
+    width: 556px;
+}
+
+.xButtonAlignClass{
+    display: float;
+    text-align: right;
+}
+
+.newPostXButtonClass{
+    background-color: lightgray;
+    border: none;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    
+}
+
+.postDiv{
+    max-width: 700px;
+    margin: 25px;
+    background-color: rgb(224, 224, 224);
+    padding: 30px;
+    border-radius: 5px;
+}
+.newPostButtonClass{
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+
+
+
+}
+.newPostButtonClass:hover{
+    transition: transform .5s;
+    transform: scale(1.03);
+    transform-origin: center;
+}
+
+//post title
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+.postText{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;}
+
+//date
+
+h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: .75em;
+    color: gray;
+}
+
+.postScore{
+    font-family: 'Oswald', sans-serif;
+}
+
+.voteButton{
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    border: none;
+}

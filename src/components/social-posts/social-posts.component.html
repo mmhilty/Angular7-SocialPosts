@@ -1,0 +1,30 @@
+<div class="containerClass">
+<div class="headerDiv">
+  <h1> My Blog Title </h1>
+  <button (click)="showPostForm()" class="newPostButtonClass" *ngIf="!showPostFormBool"> NEW POST </button>
+
+  <div *ngIf="showPostFormBool" class="newPostFormClass">
+    <div class="xButtonAlignClass"><button (click)="hidePostForm()" class="newPostXButtonClass">x</button><br/></div>
+    TITLE<br /> <input class="newPostTitleBoxClass" [(ngModel)]="newPostTitle" /><br /><br />
+    YOUR THOUGHTS GO HERE <br />
+    <textarea rows="10" cols="75" [(ngModel)]="newPostText"></textarea><br /><br />
+    <button (click)="createPost(newPostTitle, newPostText)" class="newPostButtonClass"> POST </button><br />
+  </div>
+</div>
+
+<div *ngFor="let item of socialPostList,let i = index" class="postDiv">
+  <h3>
+    {{item.postTitle}}
+  </h3>
+  <h4>
+    {{item.postDate}}
+  </h4>
+  <p class="postText">
+    {{item.postText}}
+  </p>
+  <p class = "postScore">
+    Score: {{item.postVoteScore}}    <button class="voteButton" (click)="addToPostScore(i)">😊</button> <button class="voteButton" (click)="subtractFromPostScore(i)">☹️</button>
+  </p>
+</div>
+
+</div>
